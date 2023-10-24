@@ -1,9 +1,10 @@
+/* Ngapain inspect? ngebobol kok di source code? Dface kok di gerbang? Nice try kids. */
 body {
   margin: 0;
   overflow: hidden;
   font-family: 'Arial', sans-serif;
 }
-
+/* Ngapain inspect? ngebobol kok di source code? Dface kok di gerbang? Nice try kids. */
 .page {
   height: 100vh;
   display: flex;
@@ -12,7 +13,7 @@ body {
 }
 
 .page1 {
-  background: #001; /* Sesuaikan dengan warna background yang diinginkan */
+  background: #001; 
 }
 
 .button-container {
@@ -21,20 +22,20 @@ body {
 
 .start-text {
   color: #fff;
-  font-size: 24px; /* Ubah ukuran font sesuai keinginan Anda */
+  font-size: 24px; 
   font-weight: bold;
   text-transform: uppercase;
 }
 .undercons {
   color: #D48A11;
-  font-size: 15px; /* Ubah ukuran font sesuai keinginan Anda */
+  font-size: 15px; 
   font-weight: bold;
 }
 .button {
   position: relative;
   display: inline-block;
   padding: 20px 40px;
-  margin-top: 10px; /* Tambahkan jarak dari atas tombol */
+  margin-top: 10px; 
   background: #111;
   border: 2px solid #fff;
   color: #fff;
@@ -46,7 +47,7 @@ body {
 }
 
 .button:hover {
-  background: #ff00ff; /* Ubah warna latar belakang saat tombol dihover */
+  background: #ff00ff; 
   color: #111;
   transform: scale(1.1);
 }
@@ -109,7 +110,6 @@ body {
   transform: scale(0.95);
 }
 
-/* Transisi halaman */
 
 .page {
   transition: opacity 1s ease-in-out;
@@ -119,26 +119,23 @@ body {
   opacity: 0;
 }
 
-/* Additional styles for Page 2 */
+
 
 .page2 {
-  background: linear-gradient(45deg, #fff, #f0f0f0, #fff, #c0f0c0); /* Ubah gradasi sesuai keinginan Anda */
-  text-align: center;
-  opacity: 1; /* Sesuaikan opacity sesuai kebutuhan */
+  background: linear-gradient(45deg, #fff, #f0f0f0, #fff, #c0f0c0); 
+  opacity: 1; 
 }
 
 .page-content {
   margin-top: 50px;
   font-size: 24px;
   color: #2A2929; 
-  transition: opacity 1s ease-in-out; /* Tambahkan transisi ke halaman 2 */
+  transition: opacity 1s ease-in-out; 
 }
 
 .additional-info {
   margin-top: 20px;
   font-size: 18px;
   font-style: italic;
-  color: #666; /* Ubah warna teks variasi */
+  color: #666; 
 }
-
-/* ... (Tambahkan lebih banyak gaya atau aturan sesuai kebutuhan Anda) ... */
