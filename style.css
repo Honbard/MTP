@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page1 {
+  background: #001; /* Sesuaikan dengan warna background yang diinginkan */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.start-text {
+  color: #fff;
+  font-size: 24px; /* Ubah ukuran font sesuai keinginan Anda */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.undercons {
+  color: #D48A11;
+  font-size: 15px; /* Ubah ukuran font sesuai keinginan Anda */
+  font-weight: bold;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 10px; /* Tambahkan jarak dari atas tombol */
+  background: #111;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background: #ff00ff; /* Ubah warna latar belakang saat tombol dihover */
+  color: #111;
+  transform: scale(1.1);
+}
+
+.button .neon-border {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: linear-gradient(45deg, #0048ba, #2d9c18, #ffb900, #ed9121, #c41e3a, #bedbed, #339966);
+  background-size: 600% 600%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  animation: neon-border-animation 3s infinite linear, neon-color-animation 3s infinite linear;
+}
+
+@keyframes neon-border-animation {
+  0%, 100% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes neon-color-animation {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.button:hover .neon-border {
+  opacity: 1;
+}
+
+.button .shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -2;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.button:hover .shine {
+  width: 100%;
+  opacity: 1;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/* Transisi halaman */
+
+.page {
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Additional styles for Page 2 */
+
+.page2 {
+  background: linear-gradient(45deg, #fff, #f0f0f0, #fff, #c0f0c0); /* Ubah gradasi sesuai keinginan Anda */
+  text-align: center;
+  opacity: 1; /* Sesuaikan opacity sesuai kebutuhan */
+}
+
+.page-content {
+  margin-top: 50px;
+  font-size: 24px;
+  color: #2A2929; 
+  transition: opacity 1s ease-in-out; /* Tambahkan transisi ke halaman 2 */
+}
+
+.additional-info {
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+  color: #666; /* Ubah warna teks variasi */
+}
+
+/* ... (Tambahkan lebih banyak gaya atau aturan sesuai kebutuhan Anda) ... */
